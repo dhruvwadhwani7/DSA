@@ -11,3 +11,5 @@ for _ in range(t):
         else:
             i+= k + 1 
     print(count)
+    
+# div 3 contest Q1 - 17 july 2024
