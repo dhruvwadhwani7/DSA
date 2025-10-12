@@ -9,3 +9,30 @@ while n > 0 :
     n = n// 10
 print(reversedNum) 
         
+class Solution(object):
+    def reverse(self, x):
+        reversedNum = 0
+        isNegative = x < 0    
+        
+        if isNegative:
+            x = -x             
+        
+        while x > 0:
+            lastDigit = x % 10
+            reversedNum = (reversedNum * 10) + lastDigit
+            x = x // 10
+        
+        if isNegative:
+            reversedNum = -reversedNum
+            
+        if reversedNum < -2**31 or reversedNum > 2**31 - 1:
+            return 0
+        
+        return reversedNum
+
+    
+sol = Solution()
+print(sol.reverse(123450))
+print(sol.reverse(-123450))
+print(sol.reverse(1534236469))
+        

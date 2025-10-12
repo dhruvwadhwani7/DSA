@@ -13,10 +13,14 @@
 
 
 # brute force method
-n = 1234513981938
-count = 0 
-while n > 0 :
-    count = count + 1
-    n = n // 10 
-print(count)
+# n = 1234513981938
+# count = 0 
+# while n > 0 :
+#     count = count + 1
+#     n = n // 10 
+# print(count)
 
+x = 1210
+# print(x[::-1])
+print(str(x)[::-1])
+print(type(x))
