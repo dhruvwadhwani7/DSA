@@ -5,16 +5,16 @@
 # median(sorted_arr)
 
 #this is the BRUTE FORCE APPROACH 
-class Solution(object):
-    def findMedianSortedArrays(self, nums1, nums2):
-        sorted_arr = sorted(nums1+nums2)
-        length = len(sorted_arr)
-        if length % 2 != 0:
-            return sorted_arr[length // 2]
-        else :
-            mid1 = sorted_arr[length // 2]
-            mid2 = sorted_arr[(length // 2)-1]
-            return (mid1 + mid2)/2
+# class Solution(object):
+#     def findMedianSortedArrays(self, nums1, nums2):
+#         sorted_arr = sorted(nums1+nums2)
+#         length = len(sorted_arr)
+#         if length % 2 != 0:
+#             return sorted_arr[length // 2]
+#         else :
+#             mid1 = sorted_arr[length // 2]
+#             mid2 = sorted_arr[(length // 2)-1]
+#             return (mid1 + mid2)/2
 #time complexity of this is O((n + m) log(n + m))
 
 #Leetcode accepted 
